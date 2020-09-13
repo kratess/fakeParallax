@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST</title>
+    <script src="fakeParallax.min.js"></script>
+  </head>
+  <body>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <hr>
+
+    <div class="wrapper">
+      <div class="left">
+        <div class="img">
+
+        </div>
+      </div>
+      <div class="center">
+        <div class="img">
+
+        </div>
+      </div>
+      <div class="right">
+        <div class="img">
+
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+
+<script type="text/javascript">
+
+window.addEventListener("load", function(event) {
+  // new fakeParallax(dom, anchor_top, anchor_bottom, parallax, inverted)
+  f = new fakeParallax(document.getElementsByClassName("center")[0], ScrollPosition.bottom, ScrollPosition.top, 150, true);
+  f1 = new fakeParallax(document.getElementsByClassName("right")[0], ScrollPosition.bottom, ScrollPosition.top, 200, false);
+  startFakeParallax(f, f1);
+})
+
+</script>
+
+<style media="screen">
+.wrapper {
+  position: relative;
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.img {
+  background-image: url('img.png');
+  width: 180px;
+  height: 151px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top: solid 1px red;
+  border-bottom: solid 1px red;
+}
+</style>
+  </body>
+</html>
